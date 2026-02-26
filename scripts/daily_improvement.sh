@@ -2,7 +2,7 @@
 # daily_improvement.sh - Daily workflow improvements at 8:00 AM
 # Runs automatically via systemd timer
 
-WORKSPACE="/home/freskhy/.openclaw/workspace"
+WORKSPACE="/home/freskhy/projects/openclaw-workspace"
 DATE=$(date +%Y-%m-%d)
 TIME=$(date +%H:%M)
 LOG_FILE="$WORKSPACE/memory/improvements/$DATE.md"

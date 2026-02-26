@@ -4,9 +4,9 @@ Wants=openclaw-daily-improvement.timer
 
 [Service]
 Type=oneshot
-ExecStart=/home/freskhy/.openclaw/workspace/scripts/daily_improvement.sh
+ExecStart=/home/freskhy/projects/openclaw-workspace/scripts/daily_improvement.sh
 User=freskhy
-WorkingDirectory=/home/freskhy/.openclaw/workspace
+WorkingDirectory=/home/freskhy/projects/openclaw-workspace
 
 [Install]
 WantedBy=multi-user.target

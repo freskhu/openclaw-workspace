@@ -9,8 +9,8 @@ User=freskhy
 Group=freskhy
 Environment="HOME=/home/freskhy"
 Environment="PATH=/usr/local/bin:/usr/bin:/bin"
-WorkingDirectory=/home/freskhy/.openclaw/workspace
-ExecStart=/home/freskhy/.openclaw/workspace/scripts/memory_consolidate.sh
+WorkingDirectory=/home/freskhy/projects/openclaw-workspace
+ExecStart=/home/freskhy/projects/openclaw-workspace/scripts/memory_consolidate.sh
 StandardOutput=journal
 StandardError=journal
 
@@ -18,7 +18,7 @@ StandardError=journal
 NoNewPrivileges=true
 ProtectSystem=strict
 ProtectHome=false
-ReadWritePaths=/home/freskhy/.openclaw/workspace/memory
+ReadWritePaths=/home/freskhy/projects/openclaw-workspace/memory
 ReadWritePaths=/home/freskhy/.openclaw/agents
 
 [Install]

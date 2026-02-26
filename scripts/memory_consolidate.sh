@@ -4,7 +4,7 @@
 
 set -e
 
-WORKSPACE="${HOME}/.openclaw/workspace"
+WORKSPACE="${HOME}/projects/openclaw-workspace"
 MEMORY_DIR="${WORKSPACE}/memory"
 PROJECTS_DIR="${MEMORY_DIR}/projects"
 CONSOLIDATION_DIR="${MEMORY_DIR}/consolidation"

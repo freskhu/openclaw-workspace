@@ -39,6 +39,13 @@
 - **Logs**: `trading/ict2022/logs/`
 - **Config**: `trading/ict2022/config/strategy.yaml`
 
+## Credentials Location
+
+**Hummingbot API credentials stored in:**
+- Environment variables (`HB_API_USER`, `HB_API_PASS`)
+- Set at runtime in live_runner environment
+- Not stored in repo or memory files (security compliance)
+
 ## Owners
 
 - A01_QUANT: Strategy research, signals

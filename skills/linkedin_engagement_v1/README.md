@@ -53,7 +53,7 @@ Daily Routine (M01_SOCIAL):
 ## Automation
 
 Runs automatically via systemd timer:
-- **Schedule:** Daily at 9:00 AM Europe/Lisbon
+- **Schedule:** 9:00 AM and 9:00 PM Europe/Lisbon (twice daily)
 - **Timer:** `linkedin-daily-engagement.timer`
 - **Service:** `linkedin-daily-engagement.service`
 

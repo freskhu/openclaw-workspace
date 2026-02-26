@@ -25,6 +25,19 @@
 | Trading | A01_QUANT, A02_PM, A03_TRADER |
 | Shopping | S01_PRICE_HUNTER |
 
+## Skills Library
+
+Reusable skills for common tasks → [../skills/README.md](../skills/README.md)
+
+| Skill | Use Case |
+|-------|----------|
+| procureai_ui_sprint | Rapid UI polish before demos |
+| procureai_seed_data | Generate demo/test data |
+| investor_demo_readiness | Validate for investor presentations |
+| survey_outreach | Customer research and feedback |
+| trading_release_gate | Safety checks before live trading |
+| memory_consolidation | Weekly memory distillation |
+
 ## Daily Log Pattern
 
 - Raw notes: `memory/YYYY-MM-DD.md`

@@ -1,0 +1,90 @@
+# LinkedIn Engagement Configuration
+
+# Timezone for scheduling and timestamps
+timezone: Europe/Lisbon
+
+# Daily engagement limits (hard constraints)
+daily_limits:
+  likes: 10
+  comments: 3
+
+# Content topics to prioritize in feed scan
+topics:
+  - AI agents
+  - procurement
+  - operations
+  - manufacturing
+  - cybersecurity
+  - networking
+  - VPN
+  - VLAN
+  - firewalls
+  - crypto
+  - web3
+  - 3d printing
+  - MBA
+  - learning
+  - executive education
+
+# Engagement preferences
+engagement:
+  # Prefer commenting on posts where Simão has specific insight
+  comment_threshold: high_relevance_only
+  
+  # Topics that always trigger comment consideration
+  high_priority_topics:
+    - AI agents
+    - procurement
+    - operations
+    - 3d printing
+    - MBA
+    - learning
+
+# Voice and tone settings
+tone:
+  style: executive, direct, operator-builder
+  avoid:
+    - hype
+    - generic motivation
+    - oversharing
+    - buzzwords
+    - corporate speak
+
+# Safety settings
+safety:
+  approval_required: true
+  manual_post_click: true  # Never automate Post button
+  require_approval_for:
+    - all_comments
+    - all_likes  # Set to false if you want auto-like after approval
+
+# Browser settings
+browser:
+  profile: openclaw
+  target: host
+  headless: false  # Must be visible for manual Post clicks
+
+# Logging
+logging:
+  format: jsonl
+  directory: logs/
+  filename_pattern: "linkedin_engagement_YYYYMMDD.jsonl"
+  fields:
+    - ts
+    - url
+    - action
+    - drafted_text
+    - approved
+    - result
+
+# Discord settings
+discord:
+  approval_channel: product-hunt
+  fallback_channel: general
+
+# Fallback behavior
+fallback:
+  # If browser feed extraction fails
+  on_feed_extraction_failure: ask_for_urls
+  # If Discord unavailable
+  on_discord_failure: use_current_channel

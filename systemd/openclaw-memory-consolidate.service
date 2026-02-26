@@ -1,0 +1,25 @@
+[Unit]
+Description=OpenClaw Memory Consolidation
+Documentation=https://docs.openclaw.ai/concepts/memory
+After=network.target
+
+[Service]
+Type=oneshot
+User=freskhy
+Group=freskhy
+Environment="HOME=/home/freskhy"
+Environment="PATH=/usr/local/bin:/usr/bin:/bin"
+WorkingDirectory=/home/freskhy/.openclaw/workspace
+ExecStart=/home/freskhy/.openclaw/workspace/scripts/memory_consolidate.sh
+StandardOutput=journal
+StandardError=journal
+
+# Security hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=false
+ReadWritePaths=/home/freskhy/.openclaw/workspace/memory
+ReadWritePaths=/home/freskhy/.openclaw/agents
+
+[Install]
+WantedBy=multi-user.target

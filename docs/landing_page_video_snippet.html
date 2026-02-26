@@ -1,0 +1,70 @@
+<!-- ProcureAI Landing Page Video Implementation -->
+<!-- Copy this into your landing page where you want the chat demo -->
+
+<style>
+.chat-demo-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(79, 70, 229, 0.25);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 10px;
+}
+
+.chat-demo-video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Fallback for mobile - static image */
+@media (prefers-reduced-motion: reduce) {
+    .chat-demo-video {
+        display: none;
+    }
+    .chat-demo-poster {
+        display: block !important;
+        width: 100%;
+        border-radius: 12px;
+    }
+}
+
+.chat-demo-poster {
+    display: none;
+}
+</style>
+
+<div class="chat-demo-container">
+    <video 
+        class="chat-demo-video"
+        autoplay 
+        loop 
+        muted 
+        playsinline
+        poster="procureai_chat_poster.jpg"
+        preload="auto"
+    >
+        <source src="procureai_chat_demo.webm" type="video/webm">
+        <!-- Add MP4 fallback when available -->
+        <!-- <source src="procureai_chat_demo.mp4" type="video/mp4"> -->
+        <img 
+            class="chat-demo-poster" 
+            src="procureai_chat_poster.jpg" 
+            alt="ProcureAI chat interface showing a procurement conversation"
+        >
+    </video>
+</div>
+
+<!-- 
+NOTES:
+- Video autoplays on mute (required by most browsers)
+- Loops continuously for engagement
+- Poster image shows before video loads
+- Respects user's motion preferences (accessibility)
+- WebM format works in Chrome, Firefox, Edge
+- Add MP4 source for Safari support if needed
+-->

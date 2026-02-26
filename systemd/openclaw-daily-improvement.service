@@ -1,0 +1,12 @@
+[Unit]
+Description=OpenClaw Daily Improvement Task
+Wants=openclaw-daily-improvement.timer
+
+[Service]
+Type=oneshot
+ExecStart=/home/freskhy/.openclaw/workspace/scripts/daily_improvement.sh
+User=freskhy
+WorkingDirectory=/home/freskhy/.openclaw/workspace
+
+[Install]
+WantedBy=multi-user.target

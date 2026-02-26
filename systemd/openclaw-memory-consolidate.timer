@@ -1,0 +1,11 @@
+[Unit]
+Description=Weekly OpenClaw Memory Consolidation
+Documentation=https://docs.openclaw.ai/concepts/memory
+
+[Timer]
+OnCalendar=Mon *-*-* 08:10:00
+Timezone=Europe/Lisbon
+Persistent=true
+
+[Install]
+WantedBy=timers.target

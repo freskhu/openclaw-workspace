@@ -50,6 +50,20 @@ Daily Routine (M01_SOCIAL):
 - ✅ Always require approval
 - ✅ Log all actions (no secrets)
 
+## Automation
+
+Runs automatically via systemd timer:
+- **Schedule:** Daily at 9:00 AM Europe/Lisbon
+- **Timer:** `linkedin-daily-engagement.timer`
+- **Service:** `linkedin-daily-engagement.service`
+
+**Install:**
+```bash
+sudo cp skills/linkedin_engagement_v1/systemd/linkedin-daily-engagement.* /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now linkedin-daily-engagement.timer
+```
+
 ## Success Metrics
 - 100% approval rate (never post without explicit approval)
 - Zero credential leaks

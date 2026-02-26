@@ -1,0 +1,14 @@
+[Unit]
+Description=LinkedIn Daily Engagement - M01_SOCIAL
+Wants=linkedin-daily-engagement.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/openclaw agent run M01_SOCIAL --task="Execute LinkedIn engagement daily routine" --config=/home/freskhy/projects/openclaw-workspace/config/linkedin_engagement.yaml
+User=freskhy
+WorkingDirectory=/home/freskhy/projects/openclaw-workspace
+Environment="HOME=/home/freskhy"
+Environment="PATH=/usr/local/bin:/usr/bin:/bin"
+
+[Install]
+WantedBy=multi-user.target

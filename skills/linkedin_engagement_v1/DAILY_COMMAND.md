@@ -53,18 +53,72 @@ cd ~/projects/openclaw-workspace
 
 ---
 
-## Automation (Optional)
+## Automation (Systemd Timer)
 
-To run daily at 9 AM Lisbon time:
+The routine runs automatically daily at 9:00 AM Europe/Lisbon time via systemd.
 
-```bash
-# Add to systemd or cron
-crontab -e
-# Add: 0 9 * * * cd ~/projects/openclaw-workspace && openclaw agent run M01_SOCIAL --task="linkedin daily engagement"
-```
+### Install/Enable
 
-Or use existing systemd infrastructure:
 ```bash
 sudo cp ~/projects/openclaw-workspace/skills/linkedin_engagement_v1/systemd/linkedin-daily-engagement.* /etc/systemd/system/
+sudo systemctl daemon-reload
 sudo systemctl enable --now linkedin-daily-engagement.timer
+```
+
+### Check Status
+
+```bash
+systemctl status linkedin-daily-engagement.timer
+systemctl list-timers --all | grep linkedin
+```
+
+### View Logs
+
+```bash
+journalctl -u linkedin-daily-engagement.service -f
+```
+
+### Manual Trigger
+
+```bash
+sudo systemctl start linkedin-daily-engagement.service
+```
+
+### Disable
+
+```bash
+sudo systemctl disable --now linkedin-daily-engagement.timer
+```
+
+---
+
+## Prerequisites for Automation
+
+Before enabling the timer, ensure:
+
+1. **LinkedIn session is active**
+   ```bash
+   openclaw browser start --profile=openclaw --target=host
+   # Login to LinkedIn manually (one-time)
+   ```
+
+2. **Discord bot can post to #product-hunt**
+   - Verify channel access
+   - Test notification
+
+3. **Approval workflow understood**
+   - You'll receive Discord notification daily
+   - Reply with approvals within reasonable time
+   - Comments wait for your manual "Post" click
+
+---
+
+## Fallback (If Automation Fails)
+
+If the systemd timer fails or Discord is unavailable:
+
+```bash
+# Run manually
+cd ~/projects/openclaw-workspace
+openclaw agent run M01_SOCIAL --task="Execute LinkedIn engagement daily routine"
 ```

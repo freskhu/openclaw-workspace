@@ -1,0 +1,13 @@
+[Unit]
+Description=OpenClaw LinkedIn Engagement Automation
+After=network.target
+
+[Service]
+Type=oneshot
+User=freskhy
+Group=freskhy
+ExecStart=/home/freskhy/.openclaw/workspace/scripts/run_linkedin_engagement.sh
+Environment="HOME=/home/freskhy"
+Environment="PATH=/usr/local/bin:/usr/bin:/bin"
+StandardOutput=journal
+StandardError=journal

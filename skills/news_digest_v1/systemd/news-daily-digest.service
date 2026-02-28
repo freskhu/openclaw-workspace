@@ -1,0 +1,16 @@
+[Unit]
+Description=Daily News Digest
+Wants=news-daily-digest.timer
+
+[Service]
+Type=oneshot
+ExecStart=/home/freskhy/.openclaw/workspace/skills/news_digest_v1/run_news_digest.sh
+User=freskhy
+WorkingDirectory=/home/freskhy/.openclaw/workspace
+Environment="HOME=/home/freskhy"
+Environment="PATH=/usr/local/bin:/usr/bin:/bin:/home/freskhy/.npm-global/bin"
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

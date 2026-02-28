@@ -1,0 +1,8 @@
+# LinkedIn Daily Engagement Cron
+# Runs at 9:00 AM and 9:00 PM daily
+
+# Morning run
+0 9 * * * /home/freskhy/.openclaw/workspace/skills/linkedin_engagement_v1/run_engagement.sh >> /home/freskhy/projects/openclaw-workspace/logs/linkedin_cron.log 2>&1
+
+# Evening run  
+0 21 * * * /home/freskhy/.openclaw/workspace/skills/linkedin_engagement_v1/run_engagement.sh >> /home/freskhy/projects/openclaw-workspace/logs/linkedin_cron.log 2>&1

@@ -37,4 +37,14 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## Trading Setup
+
+### Hummingbot API Credentials
+- **Location**: `trading/ict2022/.env`
+- **Format**: HB_API_USER=root / HB_API_PASS=ta0s1mpl3s?
+- **Loaded**: Automatically by live_runner.py
+- **Never ask again** — check .env file first
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.

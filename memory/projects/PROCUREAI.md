@@ -14,6 +14,7 @@
 
 ## Key Decisions
 
+- **2026-02-27**: Added comprehensive test suite - 16 unit tests for RFQ module + integration tests
 - **2026-02-24**: Moved to PR workflow (no direct master pushes)
 - **2026-02-24**: Fixed dashboard crash (`rfqs.filter` error handling)
 - **2026-02-23**: Added Team section with Founder + AI Agent profiles

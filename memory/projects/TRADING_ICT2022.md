@@ -42,9 +42,10 @@
 ## Credentials Location
 
 **Hummingbot API credentials stored in:**
-- Environment variables (`HB_API_USER`, `HB_API_PASS`)
-- Set at runtime in live_runner environment
-- Not stored in repo or memory files (security compliance)
+- `trading/ict2022/.env` file (HB_API_USER, HB_API_PASS)
+- Loaded automatically by live_runner.py on startup
+- File is gitignored (not in repo) and chmod 600 (restricted access)
+- **DO NOT** store credentials in memory files or ask user repeatedly
 
 ## Owners
 

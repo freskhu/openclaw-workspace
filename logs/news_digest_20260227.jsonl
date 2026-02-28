@@ -1,0 +1,4 @@
+{"timestamp": "2026-02-27T15:16:15.149787", "event": "digest_start", "date": "2026-02-27"}
+{"timestamp": "2026-02-27T15:16:16.756462", "event": "digest_complete", "report_file": "/home/freskhy/.openclaw/workspace/logs/news_digest_report_20260227.md", "email_sent": true, "sources": {"The Economist": "success", "Financial Times": "success", "Jornal Econ\u00f3mico": "success", "MIT Sloan Management Review": "success"}}
+{"timestamp": "2026-02-27T15:48:30.894797", "event": "digest_start", "date": "2026-02-27"}
+{"timestamp": "2026-02-27T15:49:08.052313", "event": "digest_complete", "report_file": "/home/freskhy/.openclaw/workspace/logs/news_digest_report_20260227.md", "email_sent": false, "sources": {"The Economist": "success", "Financial Times": "success", "Jornal Econ\u00f3mico": "error", "MIT Sloan Management Review": "success"}}

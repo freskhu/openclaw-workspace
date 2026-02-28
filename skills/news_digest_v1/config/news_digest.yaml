@@ -1,0 +1,64 @@
+# News Digest Configuration
+
+timezone: Europe/Lisbon
+
+# Delivery settings
+delivery:
+  primary: email
+  email:
+    to: "max-news-claw@proton.me"
+    from: "max-news-claw@proton.me"
+    subject_template: "📰 Daily News Digest - {date}"
+    # ProtonMail Bridge settings (requires bridge app running)
+    smtp_server: "127.0.0.1"
+    smtp_port: 1025
+    use_tls: false  # Bridge doesn't use TLS on localhost
+  fallback:
+    method: discord
+    channel: product-hunt
+
+# Sources configuration
+sources:
+  economist:
+    name: "The Economist"
+    emoji: "🌍"
+    rss_url: "https://www.economist.com/rss"
+    max_articles: 5
+    priority: high
+    
+  financial_times:
+    name: "Financial Times"
+    emoji: "💰"
+    rss_url: "https://www.ft.com/rss"
+    max_articles: 5
+    priority: high
+    
+  jornal_economico:
+    name: "Jornal Económico"
+    emoji: "🇵🇹"
+    rss_url: "https://jornaleconomico.pt/feed"
+    max_articles: 5
+    priority: medium
+    
+  mit_sloan:
+    name: "MIT Sloan Management Review"
+    emoji: "🎓"
+    rss_url: "https://sloanreview.mit.edu/feed/"
+    max_articles: 3
+    priority: medium
+
+# Content settings
+content:
+  summary_length: 3  # sentences
+  include_links: true
+  group_by_topic: true
+  
+# Schedule
+schedule:
+  time: "08:00"
+  timezone: "Europe/Lisbon"
+
+# Logging
+logging:
+  directory: "logs/"
+  filename_pattern: "news_digest_YYYYMMDD.jsonl"

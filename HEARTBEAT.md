@@ -1,8 +1,16 @@
 # HEARTBEAT.md - Daily Tasks
 
+## Before Anything Else
+
+1. **Read HEARTBEAT_STATE.md** — check current operational status
+2. **Check state tracker** — use `skills/daily-ops/scripts/check_state.sh` to avoid duplicate alerts
+3. **Only alert on NEW issues** — if already alerted today, don't repeat
+
 ## Daily 8:00 AM - Surprise Improvement
 
 **User Request:** Work autonomously every day at 8 AM. Surprise them with a completed task to improve pre-existing workflows.
+
+**Before starting:** Check state tracker for `daily_task/$(date +%Y-%m-%d)` — skip if already done.
 
 ### How It Works
 

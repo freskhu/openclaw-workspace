@@ -1,5 +1,5 @@
 [Unit]
-Description=LinkedIn Daily Engagement Timer (Morning & Evening)
+Description=Run LinkedIn engagement automation twice daily (9 AM and 9 PM)
 
 [Timer]
 OnCalendar=*-*-* 09:00:00

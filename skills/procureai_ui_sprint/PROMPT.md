@@ -1,7 +1,7 @@
-# ProcureAI UI Sprint - Prompt Template
+# Procurum UI Sprint - Prompt Template
 
 ```
-Execute a UI Sprint for ProcureAI with the following parameters:
+Execute a UI Sprint for Procurum with the following parameters:
 
 GOAL: {{sprint_goal}}
 SCOPE: {{scope}}
@@ -34,12 +34,12 @@ DELIVERABLES:
 ## Example Usage
 
 ```
-Execute a UI Sprint for ProcureAI with the following parameters:
+Execute a UI Sprint for Procurum with the following parameters:
 
 GOAL: Polish the RFQ creation flow for investor demo
 SCOPE: ["/app/rfqs/page.tsx", "components/ui/dialog.tsx", "components/ui/form"]
 DEADLINE: 2026-03-01
-REFERENCE: https://www.figma.com/file/ABC123/ProcureAI-Design
+REFERENCE: https://www.figma.com/file/ABC123/Procurum-Design
 
 TASKS:
 1. Audit current state...

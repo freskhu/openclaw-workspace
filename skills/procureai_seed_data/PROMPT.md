@@ -1,7 +1,7 @@
-# ProcureAI Seed Data - Prompt Template
+# Procurum Seed Data - Prompt Template
 
 ```
-Generate seed data for ProcureAI with the following parameters:
+Generate seed data for Procurum with the following parameters:
 
 ENVIRONMENT: {{environment}}
 DATA_VOLUME: {{data_volume}}
@@ -38,7 +38,7 @@ DELIVERABLES:
 ## Example Usage
 
 ```
-Generate seed data for ProcureAI with the following parameters:
+Generate seed data for Procurum with the following parameters:
 
 ENVIRONMENT: demo
 DATA_VOLUME: medium

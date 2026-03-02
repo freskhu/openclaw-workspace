@@ -1,4 +1,4 @@
-# ProcureAI UI Sprint - Output Schema
+# Procurum UI Sprint - Output Schema
 
 ## File Structure
 ```

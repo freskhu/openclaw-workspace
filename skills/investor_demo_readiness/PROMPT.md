@@ -1,7 +1,7 @@
 # Investor Demo Readiness - Prompt Template
 
 ```
-Prepare ProcureAI for investor demo with the following parameters:
+Prepare Procurum for investor demo with the following parameters:
 
 DEMO_DATE: {{demo_date}}
 DEMO_TYPE: {{demo_type}}
@@ -39,7 +39,7 @@ DELIVERABLES:
 ## Example Usage
 
 ```
-Prepare ProcureAI for investor demo with the following parameters:
+Prepare Procurum for investor demo with the following parameters:
 
 DEMO_DATE: 2026-03-15
 DEMO_TYPE: live

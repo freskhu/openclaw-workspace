@@ -6,7 +6,7 @@
 
 ### 08:00 AM — Daily Surprise Improvement
 - Read `memory/improvements/YYYY-MM-DD.md`
-- Complete the task (ProcureAI, OpenClaw, Skills, Trading, System, or Docs)
+- Complete the task (Procurum, OpenClaw, Skills, Trading, System, or Docs)
 - Update file with results
 - Notify @freskhy
 
@@ -37,7 +37,7 @@
 
 | # | Task | Frequency | Source |
 |---|------|-----------|--------|
-| 1 | Improve ProcureAI | Daily (rotation) | `memory/improvements/` |
+| 1 | Improve Procurum | Daily (rotation) | `memory/improvements/` |
 | 2 | Improve OpenClaw | Daily (rotation) | `memory/improvements/` |
 | 3 | Create New Skills | As needed | User request + proactive |
 | 4 | LinkedIn Engagement | 2x daily (10AM, 9PM) | Cron + manual trigger |

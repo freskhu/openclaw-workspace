@@ -1,4 +1,33 @@
-# ProcureAI Release Notes
+# Procurum Release Notes
+
+## v1.1.9 — Image Optimization (2026-03-01)
+
+### ✨ Improvements
+- **I2: Image Optimization with next/image**
+  - Next.js image optimization configuration in `next.config.ts`:
+    - Automatic WebP and AVIF format selection for optimal compression
+    - Responsive image sizes: device sizes from 640px to 3840px
+    - Image sizes: 16px to 384px for thumbnails and icons
+    - Minimum cache TTL of 60 seconds for improved performance
+  - New `OptimizedImage` component (`components/optimized-image.tsx`):
+    - Drop-in replacement for standard img tags with Next.js optimization
+    - Automatic lazy loading with skeleton placeholder
+    - Built-in error handling with user-friendly fallback UI
+    - Responsive sizing with configurable sizes attribute
+    - Support for fill mode (object-fit) and fixed dimensions
+    - Priority loading option for above-the-fold images
+    - Full TypeScript support with comprehensive prop types
+
+### Files Changed
+- `next.config.ts` — Added image optimization configuration
+- `components/optimized-image.tsx` — New reusable image component
+- `app/sections/HeroSection.tsx` — Imported OptimizedImage for future use
+
+### ✅ Quality Verification
+- Build: ✅ Successful
+- Unit Tests: ✅ 16/16 passing
+
+---
 
 ## v1.1.8 — Error Boundary Resilience (2026-02-28)
 

@@ -1,7 +1,7 @@
-# ProcureAI UI Sprint
+# Procurum UI Sprint
 
 ## Purpose
-Execute a focused UI/UX improvement sprint on the ProcureAI application. This skill handles rapid iteration on frontend components, responsive design fixes, and visual polish.
+Execute a focused UI/UX improvement sprint on the Procurum application. This skill handles rapid iteration on frontend components, responsive design fixes, and visual polish.
 
 ## When to Use
 - Before investor demos or public launches

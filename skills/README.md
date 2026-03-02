@@ -14,6 +14,7 @@ Versioned, reusable skills for the AI organization.
 | [memory_consolidation](memory_consolidation/) | Weekly memory distillation into project docs | any |
 | [linkedin_engagement_v1](linkedin_engagement_v1/) | Daily LinkedIn engagement with approval workflow | M01_SOCIAL |
 | [social_media_ops_v1](social_media_ops_v1/) | Content creation for LinkedIn/X (7 pillars) | M01_SOCIAL |
+| [api_health_guard](api_health_guard/) | Monitor API limits, pause tasks on rate limits | OPS |
 
 ## Skill Structure
 

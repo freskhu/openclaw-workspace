@@ -46,7 +46,7 @@ memory/demos/{{demo_date}}/
 ## demo_script.md
 
 ```markdown
-# Demo Script: ProcureAI
+# Demo Script: Procurum
 **Target Duration:** 12 minutes
 **Focus:** {{investor_focus}}
 

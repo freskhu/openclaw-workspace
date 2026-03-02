@@ -1,4 +1,4 @@
-# ProcureAI UI Sprint - QA Checklist
+# Procurum UI Sprint - QA Checklist
 
 ## Pre-Flight
 - [ ] Skill inputs documented in sprint log

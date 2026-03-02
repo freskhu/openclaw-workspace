@@ -1,4 +1,4 @@
-# ProcureAI Seed Data - QA Checklist
+# Procurum Seed Data - QA Checklist
 
 ## Pre-Flight
 - [ ] Target database is accessible

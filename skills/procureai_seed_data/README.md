@@ -1,7 +1,7 @@
-# ProcureAI Seed Data
+# Procurum Seed Data
 
 ## Purpose
-Generate and load realistic seed data for ProcureAI demos, testing, and development. Creates suppliers, products, RFQs, quotes, and projects with coherent relationships.
+Generate and load realistic seed data for Procurum demos, testing, and development. Creates suppliers, products, RFQs, quotes, and projects with coherent relationships.
 
 ## When to Use
 - New environment setup (dev, staging, demo)

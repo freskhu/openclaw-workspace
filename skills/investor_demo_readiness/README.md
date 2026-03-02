@@ -1,7 +1,7 @@
 # Investor Demo Readiness
 
 ## Purpose
-Prepare and validate ProcureAI for investor demonstrations. Ensures the demo environment is stable, data is compelling, and all critical paths work flawlessly.
+Prepare and validate Procurum for investor demonstrations. Ensures the demo environment is stable, data is compelling, and all critical paths work flawlessly.
 
 ## When to Use
 - 1-2 weeks before scheduled investor meetings

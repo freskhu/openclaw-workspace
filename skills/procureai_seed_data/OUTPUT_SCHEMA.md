@@ -1,4 +1,4 @@
-# ProcureAI Seed Data - Output Schema
+# Procurum Seed Data - Output Schema
 
 ## File Structure
 ```
